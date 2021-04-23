@@ -67,7 +67,4 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-.row {
-    width: 300px !important;
-}
 </style>
