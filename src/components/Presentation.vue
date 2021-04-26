@@ -1,7 +1,7 @@
 <template>
     <div id="about" class="container-fluid justify-center">
         
-            <div class="col-xs-8 col-md-4 mx-auto mb-3 text-center">
+            <div id="photo" class="col-xs-8 col-md-4 mx-auto mb-3 text-center">
                 <img src="../assets/benoit.jpeg" alt="Benoit">  
             </div>
              <div class="my-auto text-center heading">
@@ -61,6 +61,21 @@ button {
 }
 button:hover {
     transform: scale(1.20);
+}
+#photo {
+    animation: scale-up-center .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+            transform: scale(0);
+  }
+  70% {
+            transform: scale(1.3);
+  }
+  100% {
+            transform: scale(1);
+  }
 }
 @media all and (max-width: 450px) {
     h1 {
