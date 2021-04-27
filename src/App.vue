@@ -5,6 +5,7 @@
     <skills></skills>
     <experience></experience>
     <portfolio></portfolio>
+    <recommandations></recommandations>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Presentation from './components/Presentation'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
+import Recommandations from './components/Recommandations'
 
 
 export default {
@@ -23,7 +25,8 @@ export default {
     'presentation' : Presentation,
     'skills' : Skills,
     'experience' : Experience,
-    'portfolio' : Portfolio
+    'portfolio' : Portfolio,
+    'recommandations' : Recommandations
   }
 }
 </script>
@@ -32,5 +35,6 @@ export default {
 <style>
 #app {
   margin: 0;
+  background-color: #E8ECF3;
 }
 </style>
