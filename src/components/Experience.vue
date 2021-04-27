@@ -6,24 +6,24 @@
     </div> 
     <div class="container my-3">
        <div class="row py-5 justify-content-around">
-           <div class="card col-md-4 text-center mb-5">
+           <div class="card col-md-5 text-center mb-5 p-3">
                <p class="mt-2">2020 - 2021</p>
                <i class="fas fa-user-graduate fa-3x"></i>
                <h3>Openclassrooms</h3>
                <h4>Obtention du titre RNCP de <b>Développeur Web</b> (Bac+2)</h4>
                <hr class="mx-auto mt-3">
-               <p>Création de sites web statiques en HTML/CSS.</p>
-               <p>Optimisation d’un site web existant (SEO + Accessibilité).</p>
-               <p>Front end d’un site e-commerce en Javascript (+ exploitation API).</p>
-               <p>Back end d’un site de critique culinaire, avec NodeJS, Express, et MongoDB.</p>
-               <p>Création d’un réseau social d’entreprise avec Vue.js, NodeJS, MySQL et Sequelize.</p>
+               <p><i class="fas fa-angle-double-right"></i> Création de sites web statiques en HTML/CSS.</p>
+               <p><i class="fas fa-angle-double-right"></i> Optimisation d’un site web existant (SEO + Accessibilité).</p>
+               <p><i class="fas fa-angle-double-right"></i> Front end d’un site e-commerce en Javascript (+ exploitation API).</p>
+               <p><i class="fas fa-angle-double-right"></i> Back end d’un site de critique culinaire, avec NodeJS, Express, et MongoDB.</p>
+               <p><i class="fas fa-angle-double-right"></i> Création d’un réseau social d’entreprise avec Vue.js, NodeJS, MySQL et Sequelize.</p>
            </div>
-           <div class="card col-md-4 text-center mb-5">
+           <div class="card col-md-5 text-center mb-5 p-3">
                <p class="mt-2">2021</p>
                <i class="fas fa-laptop-code fa-3x"></i>
                <h3>Développeur web indépendant</h3>
                <hr class="mx-auto mt-5">
-               <p class="mt-5">Réalisation de divers projets : Voir partie portfolio ci-dessous</p>
+               <p class="mt-5"><i class="fas fa-angle-double-right"></i> Réalisation de divers projets : Voir partie portfolio ci-dessous</p>
            </div>
        </div>      
     </div>
