@@ -4,22 +4,22 @@
             <hr>
             <h2>Contact</h2>
         </div>
-        <form class="py-5">
+        <form class="py-5" @submit.prevent="sendEmail">
             <div class="form-group">
                 <label for="nom">Nom</label>
-                <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+                <input type="text" class="form-control" name="nom" id="nom" placeholder="Votre nom">
             </div>
             <div class="form-group">
                 <label for="prenom">Prénom</label>
-                <input type="text" class="form-control" id="prenom" placeholder="Votre Prénom">
+                <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre Prénom">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="Votre adresse Email">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Votre adresse Email">
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" placeholder="Votre message" rows="5"></textarea>
+                <textarea class="form-control" name="message" id="message" placeholder="Votre message" rows="5"></textarea>
             </div>
             <div class="text-center pt-2">
                 <button type="submit" class="px-5 py-2"><i class="fas fa-paper-plane"></i> Envoyer</button>
@@ -29,8 +29,18 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
 export default {
-    
+    methods: {
+    sendEmail: (e) => {
+      emailjs.sendForm('service_uoecxn5', 'template_4z4cm3l', e.target, 'user_vQAlNrTI3wKKaw2nlO7Zb')
+        .then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+    }
+  }
 }
 </script>
 
