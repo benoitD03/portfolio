@@ -45,6 +45,9 @@
             <div class="text-center pt-2">
                 <button type="submit" class="px-5 py-2"><i class="fas fa-paper-plane"></i> Envoyer</button>
             </div>
+            <div id="success-message" class="text-center mt-3 w-50 mx-auto">
+                <span><i class="fas fa-check-circle "></i> Message envoyé !</span>
+            </div>
         </form>
     </div>
 </template>
@@ -89,20 +92,21 @@ export default {
     },
     methods: {
         
-        sendEmail: (e) => {
-                this.$v.$touch()
+        sendEmail(e) {
+            this.$v.$touch()
                 if(this.$v.$invalid) {
                     console.log("missing elements")
                 } else {
                     emailjs.sendForm('service_uoecxn5', 'template_4z4cm3l', e.target, 'user_vQAlNrTI3wKKaw2nlO7Zb')
                     .then((result) => {
                         console.log('SUCCESS!', result.status, result.text);
+                        const successMessage = document.getElementById("success-message");
+                        successMessage.style.display = 'block';
                     }, (error) => {
                         console.log('FAILED...', error);
-                    });
-                }
-                
-        }
+                    }); 
+                }         
+        },
     }
 }
 </script>
@@ -129,5 +133,12 @@ button {
 button:hover {
     transform: scale(1.20);
 }
-
+#success-message {
+    padding: 20px 40px;
+    background-color: rgba(118, 255, 118, 0.541);
+    border: 2px solid #123b7a;
+    border-radius: 10px;
+    font-weight: bold;
+    display: none;
+}
 </style>
