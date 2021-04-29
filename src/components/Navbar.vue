@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-md" style="background-color: #123b7a ">
+        <nav class="navbar navbar-expand-lg" style="background-color: #123b7a ">
             <div id="nav" class="collapse navbar-collapse justify-content-center">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase text-light px-3" href="#">Présentation</a></li>

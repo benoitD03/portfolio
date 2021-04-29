@@ -57,7 +57,6 @@ i {
     background: #e8ecf3;
     border: 2px solid #123b7a;
     border-radius: 15px;
-    /* box-shadow: 2px 2px 12px #123b7a;   */
     box-shadow: inset 4px 4px 15px 0px #000;
 }
 </style>
