@@ -18,7 +18,14 @@
             </div>
             <div class="form-group">
                 <label for="prenom">Prénom</label>
-                <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre Prénom">
+                <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre Prénom"
+                v-model.trim="$v.prenom.$model" :class="{
+                'is-invalid':$v.prenom.$error, 'is-valid':!$v.prenom.$invalid }">
+                <div class="valid-feedback">Votre prénom est valide !</div>
+                <div class="invalid-feedback">
+                    <span v-if="!$v.nom.required">Votre prénom est requis</span>
+                    <span v-if="!$v.nom.minLength"> Votre prénom doit contenir au minimum {{ $v.prenom.$params.minLength.min }} lettres</span>
+                </div>
             </div>
             <div class="form-group">
                 <label for="email">Email *</label>
@@ -68,7 +75,11 @@ export default {
     validations: {
         nom: {
             required,
-            minLength: minLength(3),
+            minLength: minLength(2),
+        },
+        prenom: {
+            required,
+            minLength: minLength(2)
         },
         message: {
             required,
@@ -102,6 +113,7 @@ export default {
                         console.log('SUCCESS!', result.status, result.text);
                         const successMessage = document.getElementById("success-message");
                         successMessage.style.display = 'block';
+                        this.$v.$reset();
                     }, (error) => {
                         console.log('FAILED...', error);
                     }); 

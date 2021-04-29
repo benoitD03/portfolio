@@ -7,6 +7,7 @@
     <portfolio></portfolio>
     <recommandations></recommandations>
     <contact></contact>
+    <myfooter></myfooter>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Recommandations from './components/Recommandations'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 
 export default {
@@ -29,7 +31,8 @@ export default {
     'experience' : Experience,
     'portfolio' : Portfolio,
     'recommandations' : Recommandations,
-    'contact' : Contact
+    'contact' : Contact,
+    'myfooter' : Footer
   }
 }
 </script>
