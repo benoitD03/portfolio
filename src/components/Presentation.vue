@@ -7,7 +7,7 @@
              <div class="my-auto text-center heading">
                 <h1 class="text-light text-uppercase">Benoit Durand</h1>
                 <h2>Développeur Web</h2>
-                <a href="#" class="button1">
+                <a :href="`${publicPath}CV_Benoit.pdf`" class="button1">
                     <button type="button" class="mt-3"><i class="fas fa-download"></i> Télécharger CV</button>
                 </a>
                 <div class="mt-3">
@@ -25,7 +25,11 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            publicPath: process.env.BASE_URL
+        }
+    }
 }
 </script>
 
@@ -38,7 +42,7 @@ img {
     width: 250px;
     border-radius: 50%;
     border:8px solid #123b7a;
-     box-shadow: 0 0 0 2px #e8ecf3;
+     box-shadow: 0 0 0 2px #e8ecf3; 
 }
 button {
     padding: 10px 20px;
@@ -85,4 +89,6 @@ button:hover {
         font-size: 25px;
     }
 }
+
+
 </style>

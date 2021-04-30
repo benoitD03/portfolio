@@ -70,8 +70,21 @@ hr {
     box-shadow: inset 4px 4px 15px 0px #000;
 }
 .skill {
-    background-color: #123b7a;
+    background: linear-gradient(-45deg, #123b7a, #a1b3cf, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
     box-shadow: inset 4px 4px 15px 0px #000;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 img {
     width: 50px;

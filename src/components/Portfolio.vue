@@ -70,7 +70,7 @@ img {
     text-align: center;
     position: absolute;
     top: 10%;
-    transform: scale(0);
+    transform: translateY(150px) scale(0);
     transition: transform .5s ease-in-out;
 }
 .front {
@@ -83,7 +83,7 @@ img {
     
 }
 .websites:hover .back {
-    transform: scale(1);
+    transform: translateY(0) scale(1);
 }
 button {
     padding: 10px 20px;
