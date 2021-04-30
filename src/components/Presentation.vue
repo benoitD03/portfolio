@@ -1,7 +1,7 @@
 <template>
     <div id="about" class="container-fluid justify-center">
         
-            <div id="photo" class="col-xs-8 col-md-4 mx-auto mb-3 text-center">
+            <div id="photo" class="col-xs-8 col-md-4 mx-auto my-5 text-center">
                 <img src="../assets/benoit.jpeg" alt="Benoit">  
             </div>
              <div class="my-auto text-center heading">
@@ -36,7 +36,7 @@ export default {
 <style scoped>
 #about {
     padding: 60px;
-    background: #a1b3cf;
+    background: #a1b3cf; 
 }
 img {
     width: 250px;
@@ -67,7 +67,7 @@ button:hover {
     transform: scale(1.20);
 }
 #photo {
-    animation: scale-up-center .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both .3s;
 }
 
 @keyframes scale-up-center {
@@ -75,7 +75,7 @@ button:hover {
             transform: scale(0);
   }
   70% {
-            transform: scale(1.3);
+            transform: scale(1.5);
   }
   100% {
             transform: scale(1);
