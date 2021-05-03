@@ -53,7 +53,7 @@
                 <button type="submit" class="px-5 py-2"><i class="fas fa-paper-plane"></i> Envoyer</button>
             </div>
             <div id="success-message" class="text-center mt-3 w-50 mx-auto">
-                <span><i class="fas fa-check-circle "></i> Message envoyé !</span>
+                <span><i class="fas fa-check-circle "></i> Merci, votre message a été envoyé !</span>
             </div>
         </form>
     </div>
@@ -114,6 +114,9 @@ export default {
                         const successMessage = document.getElementById("success-message");
                         successMessage.style.display = 'block';
                         this.$v.$reset();
+                        setTimeout(() => {
+                            location.reload();
+                        }, 1800)
                     }, (error) => {
                         console.log('FAILED...', error);
                     }); 

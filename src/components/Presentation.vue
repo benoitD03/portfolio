@@ -81,7 +81,10 @@ button:hover {
             transform: scale(1);
   }
 }
-@media all and (max-width: 450px) {
+@media all and (max-width: 1000px) {
+    img {
+        width: 175px;
+    }
     h1 {
         font-size: 30px;
     }

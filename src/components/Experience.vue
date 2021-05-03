@@ -47,6 +47,9 @@ hr {
 h3, b{
     color: #123b7a;
 }
+h4 {
+    font-size: 20px;
+}
 i {
     margin-bottom: 15px;
 }
