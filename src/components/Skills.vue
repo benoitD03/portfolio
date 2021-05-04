@@ -18,9 +18,9 @@
             </button>
             <div class="collapse mt-3" id="secondarySkills">
                 <div class="card card-body">
-                    <i class="fas fa-database fa-2x"></i> MySQL
-                    <i class="fab fa-github fa-2x"></i> Git & GitHub
-                    <i class="fab fa-wordpress fa-2x"></i> Wordpress
+                    <div class="col-md-4"><i class="fas fa-database fa-2x"></i><br>MySQL</div>
+                    <div class="col-md-4"><i class="fab fa-github fa-2x"></i><br> Git & GitHub</div>
+                    <div class="col-md-4"><i class="fab fa-wordpress fa-2x"></i><br> Wordpress</div>
                 </div>
             </div>
         </div>
@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+.card-body {
+    flex-direction: row;
+}
 hr {
     margin-top: 20px;
     margin-bottom: 10px;

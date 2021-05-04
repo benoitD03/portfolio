@@ -11,11 +11,11 @@
                 </div>
                 <div class="back mb-4">
                     <p>{{ website.description }}</p>
-                    <a :href="website.github">
+                    <a :href="website.github" target="_blank">
                         <button class="btn mb-3">Repository GitHub</button>
                     </a>
                     <br>
-                    <a :href="website.accomodation" v-if="website.accomodation != null">
+                    <a :href="website.accomodation" target="_blank" v-if="website.accomodation != null">
                         <button class="btn">Voir le site</button>
                     </a>
                 </div>

@@ -3,15 +3,13 @@
         <div class="text-center">
             <p>© 2021 Benoit Durand</p>
             <div class="pb-2">
-                     <a class="network" href="https://github.com/benoitD03">
+                     <a class="network mx-1" href="https://github.com/benoitD03" target="_blank">
                         <i class="fab fa-github fa-2x"></i>
                     </a>
-            </div> 
-            <div class="pb-4">
-                    <a class="network" href="https://www.linkedin.com/in/benoit-durand-556b94209/">
+                    <a class="network mx-1" href="https://www.linkedin.com/in/benoit-durand-556b94209/" target="_blank">
                         <i class="fab fa-linkedin fa-2x"></i>
                      </a>
-            </div>
+            </div> 
         </div> 
     </div>
 </template>

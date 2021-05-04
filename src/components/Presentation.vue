@@ -1,24 +1,25 @@
 <template>
-    <div id="about" class="container-fluid justify-center">
-        
-            <div id="photo" class="col-xs-8 col-md-4 mx-auto my-5 text-center">
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div id="photo" class="col-12 col-lg-4 my-5 text-center">
                 <img src="../assets/benoit.jpeg" alt="Benoit">  
             </div>
-             <div class="my-auto text-center heading">
+            <div class="my-auto col-12 col-lg-4 text-center heading">
                 <h1 class="text-light text-uppercase">Benoit Durand</h1>
                 <h2>Développeur Web</h2>
-                <a :href="`${publicPath}CV_Benoit.pdf`" class="button1">
+                <a :href="`${publicPath}CV_Benoit.pdf`" class="button1" target="_blank">
                     <button type="button" class="mt-3"><i class="fas fa-download"></i> Télécharger CV</button>
                 </a>
                 <div class="mt-3">
-                     <a class="network mr-4" href="https://github.com/benoitD03">
+                     <a class="network mr-4" href="https://github.com/benoitD03" target="_blank">
                         <i class="fab fa-github fa-3x"></i>
                     </a>
-                    <a class="network" href="https://www.linkedin.com/in/benoit-durand-556b94209/">
+                    <a class="network" href="https://www.linkedin.com/in/benoit-durand-556b94209/" target="_blank">
                         <i class="fab fa-linkedin fa-3x"></i>
                      </a>
                 </div> 
-            </div>       
+            </div>  
+        </div>
     </div>
 </template>
 
@@ -34,9 +35,13 @@ export default {
 </script>
 
 <style scoped>
+.row {
+    justify-content: center ;
+}
 #about {
-    padding: 60px;
-    background: #a1b3cf; 
+    padding: 75px 300px 25px 300px;
+    background: #a1b3cf;
+    flex-wrap: wrap; 
 }
 img {
     width: 250px;
@@ -90,6 +95,11 @@ button:hover {
     }
     h2 {
         font-size: 25px;
+    }
+}
+@media all and  (max-width: 1500px){
+    #about {
+        padding: 60px;
     }
 }
 
