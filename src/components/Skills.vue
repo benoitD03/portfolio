@@ -17,10 +17,11 @@
                 Compétences secondaires <i class="fas fa-arrow-down"></i>
             </button>
             <div class="collapse mt-3" id="secondarySkills">
-                <div class="card card-body">
-                    <div class="col-md-4"><i class="fas fa-database fa-2x"></i><br>MySQL</div>
-                    <div class="col-md-4"><i class="fab fa-github fa-2x"></i><br> Git & GitHub</div>
-                    <div class="col-md-4"><i class="fab fa-wordpress fa-2x"></i><br> Wordpress</div>
+                <div id="cardSecondarySkills" class="card card-body">
+                    <div class="skillIcon col-md-3"><i class="fas fa-database fa-2x"></i><br>MySQL</div>
+                    <div class="skillIcon col-md-3"><i class="fab fa-github fa-2x"></i><br> Git & GitHub</div>
+                    <div class="skillIcon col-md-3"><i class="fab fa-wordpress fa-2x"></i><br> Wordpress</div>
+                    <div class="skillIcon col-md-3"><i class="fab fa-php fa-2x"></i><br> PHP</div>
                 </div>
             </div>
         </div>
@@ -116,6 +117,11 @@ button:hover {
     background-color: #123b7a;
     color: #e8ecf3;
 }
+#cardSecondarySkills {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
 @media all and (max-width: 525px) {
 .progress {
     width: 250px;
@@ -129,6 +135,9 @@ img {
     width: 40px;
     height: 45px;
     margin-top: 5px !important;
+}
+.skillIcon{
+    margin-top: 10px;
 }
 }
 </style>
