@@ -54,5 +54,6 @@ export default {
 #app {
   margin: 0;
   background-color: #E8ECF3;
+  font-family: 'Itim', sans-serif;
 }
 </style>
