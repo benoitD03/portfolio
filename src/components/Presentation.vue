@@ -1,6 +1,6 @@
 <template>
     <div id="about" class="container-fluid">
-        <div class="row">
+        <div class="row mt-3">
             <div id="photo" class="col-12 col-lg-4 my-5 text-center">
                 <img src="../assets/benoit.jpeg" alt="Benoit">  
             </div>

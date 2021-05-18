@@ -4,8 +4,8 @@
             <hr class="border-light">
             <h2 class="text-light">Recommandations</h2>
         </div> 
-        <div class="text-center py-5">
-            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis natus aut sint repellat praesentium, pariatur eos excepturi alias.</q>
+        <div class="container text-center py-5">
+            <q>En tant que mentor Openclassrooms j'ai eu le plaisir d'accompagner Benoit sur le cursus de Développeur Web. Sa grande autonomie, son goût pour le métier de développeur et son aisance technique me laissent présager un succès dans sa carrière de développeur.</q>
             <p class="mt-2 text-light">Nicolas Le Chenic, Développeur et Mentor chez Openclassrooms</p>
         </div>
     </div>
@@ -33,5 +33,6 @@ q {
     font-style: italic;
     font-size: 18px;
 }
+
 
 </style>

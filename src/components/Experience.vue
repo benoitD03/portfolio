@@ -64,6 +64,6 @@ p{
     background: #e8ecf3;
     border: 12px solid #123b7a;
     border-radius: 15px;
-    box-shadow:  4px 4px 5px 0px #000;
+    /* box-shadow:  4px 4px 5px 0px #000; */
 }
 </style>

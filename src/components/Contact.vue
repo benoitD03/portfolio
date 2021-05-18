@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="prenom">Prénom</label>
+                <label for="prenom">Prénom *</label>
                 <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre Prénom"
                 v-model.trim="$v.prenom.$model" :class="{
                 'is-invalid':$v.prenom.$error, 'is-valid':!$v.prenom.$invalid }">
