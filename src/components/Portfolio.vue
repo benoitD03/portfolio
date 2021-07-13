@@ -29,12 +29,12 @@ export default {
      data() {
         return {
             websites : [
-                {name: 'Portfolio', image: 'image_portfolio.png', description: 'Portfolio personel, réalisé avec Vue.js. Vous êtes actuellement sur ce site ! ', github: 'https://github.com/benoitD03/portfolio', accomodation: null},
+                {name: 'Portfolio', image: 'image_portfolio.png', description: 'Portfolio personel, réalisé avec Vue.js. Vous êtes actuellement sur ce site.', github: 'https://github.com/benoitD03/portfolio', accomodation: null},
                 {name: "Réseaux social d'entreprise", image: 'image_groupomania.png', description: "Création d'un réseau social d'entreprise, avec gestion des messages et des utilisateurs. Frontend réalisé avec Vue.js, et Backend avec NodeJS, MySQL et Sequelize.", github: 'https://github.com/benoitD03/BenoitDurand_7_020321', accomodation: null},
                 {name: 'Répertoire pays', image: 'image_countries.png', description: "Intégration d'une API regroupant tous les pays du monde, ansi que quelques informations sur chacun d'entre eux. Réalisé avec Vue.js", github: "https://github.com/benoitD03/api-countries", accomodation: null},
                 {name: "API sécurisée pour une application d'avis gastronomique", image: 'image_sauces.png', description: "Création du Backend d'une application d'avis gastronomique, avec NodeJS, Express et MongoDB", github: "https://github.com/benoitD03/BenoitDurand_6_090221", accomodation: null},
                 {name: 'Intégration de maquette responsive', image: 'image_reservia.png', description: "Intégration d'une maquette responsive, uniquement en HTML et CSS", github: "https://github.com/benoitD03/BenoitDurand_2_161020", accomodation: "https://benoitd03.github.io/BenoitDurand_2_161020/"},
-                {name: "Simulation Frontend d'un site e-commerce", image: 'image_orinoco.png', description: "Simulation d'un Frontend de site e-commerce. Réalisé en JavaScript Vanilla.", github: 'https://github.com/benoitD03/BenoitDurand_5_080121', accomodation: null}
+                {name: "Générateur de dégradé CSS", image: 'image_gradient_generator.png', description: "Générateur de dégradé CSS, réalisé en Javascript.", github: 'https://github.com/benoitD03/Gradient_Generator', accomodation: "https://benoitd03.github.io/Gradient_Generator"}
             ]
         }
     },
