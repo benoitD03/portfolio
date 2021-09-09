@@ -6,17 +6,18 @@
     </div>
     <div class="website justify-content-between my-5">
       <div
-        class="websites col-lg-4 col-md-6 col-12 mb-4"
+        class="websites col-lg-4 col-md-6 col-12 mb-5"
         v-for="(website, index) in websites"
         :key="index"
       >
-        <div class="front mb-4">
+        <div class="front mb-5">
           <img
             v-bind:src="getImgUrl(website.image)"
             v-bind:alt="website.image"
           />
         </div>
-        <div class="back mb-4">
+
+        <div class="back mb-5">
           <p>{{ website.description }}</p>
           <a :href="website.github" target="_blank">
             <button class="btn mb-3">Repository GitHub</button>
@@ -30,7 +31,6 @@
             <button class="btn">Voir le site</button>
           </a>
 
-          <!-- Button trigger modal -->
           <button
             v-if="website.video"
             type="button"
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal -->
+
     <div
       class="modal fade"
       id="exampleModal"
@@ -54,7 +54,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">{{ websites[2].name }}</h5>
+            <h5 class="modal-title" id="exampleModalLabel">
+              {{ websites[2].name }}
+            </h5>
             <button
               type="button"
               class="close"
@@ -65,10 +67,14 @@
             </button>
           </div>
           <div class="modal-body">
-              <p class="my-3">{{ websites[2].description }} Utilisation du localStorage pour le panier.</p>
-              <video controls>
-                  <source src="../assets/Video_Vuex.mp4" type="video/mp4"> 
-              </video>
+            <p class="my-3">
+              E-commerce avec une interface administrateur permettant d'ajouter, de supprimer, ou de modifier des articles.
+              Utilisation de json-server, vue.js, vuex, et le localStorage pour la gestion du panier. Voir la Démonstration
+              dans la courte vidéo ci-dessous. 
+            </p>
+            <video controls>
+              <source src="../assets/Video_Vuex.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="modal-footer">
             <button
@@ -110,7 +116,7 @@ export default {
           name: "E-commerce + interface administrateur",
           image: "image_ecommerce.png",
           description:
-            "E-commerce avec une interface administrateur. Simulation d'un serveur backend avec json-server, et frontend réalisé avec Vue.js / VUEX.",
+            "E-commerce avec une interface administrateur, avec Vue.js, VUEX, json-server.",
           github: "https://github.com/benoitD03/training_vuex_ecommerce",
           accomodation: null,
           video: "Video_Vuex.mp4",
@@ -173,19 +179,25 @@ img {
   text-align: center;
   position: absolute;
   top: 10%;
-  transform: translateY(150px) scale(0);
-  transition: transform 0.5s ease-in-out;
+  /* transform: translateY(150px) scale(0);
+  transition: transform 0.5s ease-in-out; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 .front {
-  transform: translateY(0) rotateX(0);
-  transition: transform 0.5s ease-in-out;
+  /* transform: translateY(0) rotateX(0);
+  transition: transform 0.5s ease-in-out; */
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 .websites:hover .front {
-  transform: translateY(-150px) rotateX(-90deg);
+  /* transform: translateY(-150px) rotateX(-90deg); */
+  opacity: 0;
 }
 .websites:hover .back {
-  transform: translateY(0) scale(1);
+  /* transform: translateY(0) scale(1); */
+  opacity: 1;
 }
 button {
   padding: 10px 20px;
@@ -200,10 +212,10 @@ button:hover {
   background-color: #a1b3cf;
 }
 video {
-    width: 100%;
+  width: 100%;
 }
 .modal-header {
-    color: #e8ecf3;
-    background: #123b7a;
+  color: #e8ecf3;
+  background: #123b7a;
 }
 </style>
